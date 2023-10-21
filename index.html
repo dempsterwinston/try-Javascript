@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Try Javascript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="/styles/style.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Try Javascript</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">List</a></li>
+          <li><a href="#">Listed</a></li>
+        </ul>
+      </nav>
+
+      <div class="button">
+        <button><a href="#">Log in</a></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1>JavaScript Can Change HTML Content</h1>
+        <h2>Change Texts</h2>
+        <p id="firstItem">First Item</p>
+        <button
+          onclick="document.getElementById('firstItem').innerHTML = 'Shut The Fuck Up'"
+        >
+          Press
+        </button>
+        <button
+          onclick="document.getElementById('firstItem').innerHTML = 'Ala Yot!'"
+        >
+          Press
+        </button>
+
+        <button
+          onclick="document.getElementById('firstItem'
+        ).innerHTML = 'shush gago'"
+        >
+          Pick
+        </button>
+
+        <button
+          onclick="document.getElementById('firstItem').innerHTML = 'Hala ka'"
+        >
+          Wew
+        </button>
+      </section>
+      <br />
+      <hr />
+
+      <section class="container">
+        <h1>JavaScript Can Change HTML Attribute Values</h1>
+        <h2>Change src</h2>
+        <img src="images/Screenshot (115).png" id="homer" />
+        <button
+          onclick="document.getElementById('homer').src='/images/Screenshot (115).png'"
+        >
+          Homer Show
+        </button>
+        <button
+          onclick="document.getElementById('homer').src='images/Screenshot (116).png'"
+        >
+          Homer Hide
+        </button>
+      </section>
+      <br />
+      <hr />
+
+      <section class="container">
+        <h1>JavaScript Can Change HTML Styles (CSS)</h1>
+        <h2 id="text">My Text</h2>
+        <button
+          onclick="document.getElementById('text').style.fontSize = '10px'"
+        >
+          small text
+        </button>
+        <button
+          onclick="document.getElementById('text').style.fontSize = '30px'"
+        >
+          large text
+        </button>
+        <h2>Color</h2>
+        <button onclick="document.getElementById('text').style.color = 'black'">
+          black
+        </button>
+        <button onclick="document.getElementById('text').style.color = 'red'">
+          red
+        </button>
+        <button onclick="document.getElementById('text').style.color = 'blue'">
+          blue
+        </button>
+      </section>
+      <br />
+      <hr />
+
+      <section class="container">
+        <h1>JavaScript Can Show HTML Elements</h1>
+        <img src="/images/Screenshot (115).png" id="pic" />
+        <button
+          onclick="document.getElementById('pic').style.display = 'block'"
+        >
+          Show
+        </button>
+        <button onclick="document.getElementById('pic').style.display = 'none'">
+          Hide
+        </button>
+      </section>
+      <br />
+      <hr />
+
+      <section class="container">
+        <h1>JavaScript Statements</h1>
+        <p id="changeText">wassup</p>
+      </section>
+      <br />
+      <hr />
+
+      <section></section>
+    </main>
+
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
